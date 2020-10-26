@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="list-group" *ngFor="let c of contatos">
+        <li class="list-group-item disabled" aria-disabled="true"></li>
+        <li class="list-group-item">Id: {{c.id}}</li>
+        <li class="list-group-item">Nome: {{c.name}}</li>
+        <li class="list-group-item">Nome de usuario: {{c.username}}</li>
+
+        <li class="list-group-item">Email: {{c.email}}</li>
+        <li class="list-group-item">Endereço:</li>
+        <li class="list-group-item">Rua: {{c.address.street}}</li>
+        <li class="list-group-item">Suite: {{c.address.suite}}</li>
+        <li class="list-group-item">Cidade: {{c.address.city}}</li>
+        <li class="list-group-item">CEP: {{c.address.zipcode}}</li>
+        <li class="list-group-item">Geo: Lat {{c.address.geo.lat}} Ing {{c.address.geo.lng}}</li>
+        <li class="list-group-item">Telefone: {{c.phone}}</li>
+        <li class="list-group-item">Site: {{c.website}}</li>
+        <li class="list-group-item">Companhia:</li>
+        <li class="list-group-item">Nome: {{c.company.name}}</li>
+        <li class="list-group-item">CatchPhrase: {{c.company.catchPhrase}}</li>
+        <li class="list-group-item">BS: {{c.company.bs}}</li>
+    </ul>
+</body>
+
+</html>
